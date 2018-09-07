@@ -1,7 +1,7 @@
 // const MongoClient = require('mongodb').MongoClient;
 const {MongoClient, ObjectID} = require('mongodb');
 
-MongoClient.connect(process.env.MONGODB_URI="mongodb://pirates:pirates500@ds149252.mlab.com:49252/node-js-course2-api"||'mongodb://localhost:27017/TodoApp', (err, db) => {
+MongoClient.connect('mongodb://pirates:pirates500@ds149252.mlab.com:49252/node-js-course2-api'{
   if (err) {
     return console.log('Unable to connect to MongoDB server');
   }
